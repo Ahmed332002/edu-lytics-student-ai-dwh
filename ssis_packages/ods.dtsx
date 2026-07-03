@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/29/2026 6:50:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-E28UIED"
+  DTS:CreatorName="DESKTOP-E28UIED\ahmed"
+  DTS:DTSID="{E26053BC-2499-4992-9DCD-99F28930EC1C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1010.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ods"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{B0F8A332-312A-4128-8C46-3B1155371B61}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8E77B730-67B6-45A6-A672-5DCDA07F3BFA}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\ahmed\Downloads\ai_assistant_usage_student_life.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SessionID"
+              DTS:DTSID="{0855BBED-8184-459F-8FD3-B1220DCA17A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StudentLevel"
+              DTS:DTSID="{8D2EDA39-E7CF-473F-B2C6-251991E9F3F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discipline"
+              DTS:DTSID="{739584EF-C874-4AC4-ACDB-E6B60497C684}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SessionDate"
+              DTS:DTSID="{C7AE1B81-5F22-441A-802E-0ACD55D15862}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SessionLengthMin"
+              DTS:DTSID="{BED3A029-16E0-407B-8D8F-377239D23166}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalPrompts"
+              DTS:DTSID="{73BDB9DF-5CAC-46AB-8338-C7EBD70056CB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaskType"
+              DTS:DTSID="{94D33EB2-0B16-4F03-8E24-7450E6257034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AI_AssistanceLevel"
+              DTS:DTSID="{87C25A92-8F7D-47C8-A618-D3CD2D212E6B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FinalOutcome"
+              DTS:DTSID="{E9C90F64-D04F-4FEF-9492-5C3997C7168D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UsedAgain"
+              DTS:DTSID="{6D9F8631-B187-4F08-87A6-98833979E26A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SatisfactionRating"
+              DTS:DTSID="{1260C3B7-73B7-4A03-929A-DD909EB662B3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{4A36D9FF-F425-4515-AB11-329665E5E82A}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\raw_data _to_ods"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{2E853C42-72F3-4D7A-9ED9-AE31094B7463}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="raw_data _to_ods"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="ai_assistant_usage_student_life"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionID]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionID]"
+                          name="SessionID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[StudentLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[StudentLevel]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[StudentLevel]"
+                          name="StudentLevel"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[Discipline]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[Discipline]"
+                          name="Discipline"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionDate]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionDate]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionDate]"
+                          name="SessionDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionLengthMin]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionLengthMin]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionLengthMin]"
+                          name="SessionLengthMin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TotalPrompts]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[TotalPrompts]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TotalPrompts]"
+                          name="TotalPrompts"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TaskType]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[TaskType]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TaskType]"
+                          name="TaskType"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[AI_AssistanceLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[AI_AssistanceLevel]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[AI_AssistanceLevel]"
+                          name="AI_AssistanceLevel"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[FinalOutcome]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[FinalOutcome]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[FinalOutcome]"
+                          name="FinalOutcome"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[UsedAgain]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[UsedAgain]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[UsedAgain]"
+                          name="UsedAgain"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SatisfactionRating]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SatisfactionRating]"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SatisfactionRating]"
+                          name="SatisfactionRating"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SessionID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[StudentLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="StudentLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[Discipline]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Discipline" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionDate]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SessionDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SessionLengthMin]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SessionLengthMin" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[TotalPrompts]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TotalPrompts" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[TaskType]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TaskType" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[AI_AssistanceLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="AI_AssistanceLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[FinalOutcome]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FinalOutcome" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[UsedAgain]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UsedAgain" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].ExternalColumns[SatisfactionRating]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SatisfactionRating" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode"
+                  componentClassID="Microsoft.DataConvert"
+                  contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Data Conversion"
+                  name="Convert_to_Unicode"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input]"
+                      name="Data Conversion Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[SessionID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SessionID"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionID]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[StudentLevel]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="StudentLevel"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[StudentLevel]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[Discipline]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Discipline"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[Discipline]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[SessionDate]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SessionDate"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionDate]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[SessionLengthMin]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SessionLengthMin"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionLengthMin]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[TotalPrompts]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TotalPrompts"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TotalPrompts]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[TaskType]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TaskType"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TaskType]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[AI_AssistanceLevel]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="AI_AssistanceLevel"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[AI_AssistanceLevel]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[FinalOutcome]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FinalOutcome"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[FinalOutcome]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[UsedAgain]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UsedAgain"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[UsedAgain]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input].Columns[SatisfactionRating]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SatisfactionRating"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SatisfactionRating]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output]"
+                      exclusionGroup="1"
+                      name="Data Conversion Output"
+                      synchronousInputId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionID]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionID]"
+                          name="Copy of SessionID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionID]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of StudentLevel]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of StudentLevel]"
+                          name="Copy of StudentLevel"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[StudentLevel]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of Discipline]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of Discipline]"
+                          name="Copy of Discipline"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[Discipline]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionDate]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionDate]"
+                          name="Copy of SessionDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionDate]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionLengthMin]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionLengthMin]"
+                          name="Copy of SessionLengthMin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SessionLengthMin]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TotalPrompts]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TotalPrompts]"
+                          name="Copy of TotalPrompts"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TotalPrompts]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TaskType]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TaskType]"
+                          name="Copy of TaskType"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[TaskType]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of AI_AssistanceLevel]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of AI_AssistanceLevel]"
+                          name="Copy of AI_AssistanceLevel"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[AI_AssistanceLevel]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of FinalOutcome]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of FinalOutcome]"
+                          name="Copy of FinalOutcome"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[FinalOutcome]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of UsedAgain]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of UsedAgain]"
+                          name="Copy of UsedAgain"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[UsedAgain]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SatisfactionRating]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          length="50"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SatisfactionRating]"
+                          name="Copy of SatisfactionRating"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.Int32"
+                              description="Specifies the input column used as the source of data for the conversion."
+                              name="SourceInputColumnLineageID">#{Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output].Columns[SatisfactionRating]}</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Data Conversion Error Output"
+                      synchronousInputId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\raw_data _to_ods\ods_table"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="ods_table"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[ods_table]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\raw_data _to_ods\ods_table.Connections[OleDbConnection]"
+                      connectionManagerID="{8A794642-331D-4E23-8413-7EEB9D6DE574}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[LocalHost.ods_gbg]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of SessionID]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of SessionID"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionID]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionID]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of StudentLevel]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of StudentLevel"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[StudentLevel]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of StudentLevel]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of Discipline]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of Discipline"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[Discipline]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of Discipline]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of SessionDate]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of SessionDate"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionDate]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionDate]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of SessionLengthMin]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of SessionLengthMin"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionLengthMin]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SessionLengthMin]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of TotalPrompts]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of TotalPrompts"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[TotalPrompts]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TotalPrompts]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of TaskType]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of TaskType"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[TaskType]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of TaskType]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of AI_AssistanceLevel]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of AI_AssistanceLevel"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[AI_AssistanceLevel]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of AI_AssistanceLevel]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of FinalOutcome]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of FinalOutcome"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[FinalOutcome]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of FinalOutcome]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of UsedAgain]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of UsedAgain"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[UsedAgain]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of UsedAgain]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].Columns[Copy of SatisfactionRating]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Copy of SatisfactionRating"
+                          externalMetadataColumnId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SatisfactionRating]"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output].Columns[Copy of SatisfactionRating]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionID]"
+                          dataType="wstr"
+                          length="50"
+                          name="SessionID" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[StudentLevel]"
+                          dataType="wstr"
+                          length="50"
+                          name="StudentLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[Discipline]"
+                          dataType="wstr"
+                          length="50"
+                          name="Discipline" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionDate]"
+                          dataType="wstr"
+                          length="50"
+                          name="SessionDate" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SessionLengthMin]"
+                          dataType="wstr"
+                          length="50"
+                          name="SessionLengthMin" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[TotalPrompts]"
+                          dataType="wstr"
+                          length="50"
+                          name="TotalPrompts" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[TaskType]"
+                          dataType="wstr"
+                          length="50"
+                          name="TaskType" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[AI_AssistanceLevel]"
+                          dataType="wstr"
+                          length="50"
+                          name="AI_AssistanceLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[FinalOutcome]"
+                          dataType="wstr"
+                          length="50"
+                          name="FinalOutcome" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[UsedAgain]"
+                          dataType="wstr"
+                          length="50"
+                          name="UsedAgain" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input].ExternalColumns[SatisfactionRating]"
+                          dataType="wstr"
+                          length="50"
+                          name="SatisfactionRating" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\raw_data _to_ods\ods_table.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ods_table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\raw_data _to_ods\ods_table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\raw_data _to_ods\ods_table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\raw_data _to_ods.Paths[Data Conversion Output]"
+                  endId="Package\Sequence Container\raw_data _to_ods\ods_table.Inputs[OLE DB Destination Input]"
+                  name="Data Conversion Output"
+                  startId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Outputs[Data Conversion Output]" />
+                <path
+                  refId="Package\Sequence Container\raw_data _to_ods.Paths[Flat File Source Output]"
+                  endId="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode.Inputs[Data Conversion Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Truncate_ods_table"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{F1A8B464-42E0-456D-B668-F494001A0973}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate_ods_table"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2025; © 2025 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8A794642-331D-4E23-8413-7EEB9D6DE574}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE ods_table;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{DC153DAB-733E-41F2-8574-8B6DFAD2D0C7}"
+          DTS:From="Package\Sequence Container\Truncate_ods_table"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\raw_data _to_ods" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\Truncate_ods_table"
+          TopLeft="59.6857148589529,21.4352939929723" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Sequence Container\raw_data _to_ods"
+          TopLeft="61.1142862905653,100.964705687968" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="144.000000574759,63.0352939929723">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37.9294116949953"
+              Start="0,0"
+              End="0,30.4294116949953">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.4294116949953" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="290.4,219.2"
+          Size="290.4,262.4"
+          Id="Package\Sequence Container"
+          TopLeft="209.285714731229,77.2352940499473" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\raw_data _to_ods">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="124,41.6"
+          Id="Package\Sequence Container\raw_data _to_ods\ods_table"
+          TopLeft="341.428572155383,238.588235084986" />
+        <NodeLayout
+          Size="228,41.6"
+          Id="Package\Sequence Container\raw_data _to_ods\ai_assistant_usage_student_life"
+          TopLeft="287.142857754109,61.7176470306712" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Sequence Container\raw_data _to_ods\Convert_to_Unicode"
+          TopLeft="323.571429260227,148.964705779128" />
+        <EdgeLayout
+          Id="Package\Sequence Container\raw_data _to_ods.Paths[Flat File Source Output]"
+          TopLeft="401.142857754109,103.317647030671">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.22857150611827,45.6470587484565"
+              Start="0,0"
+              End="9.22857150611827,38.1470587484565">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.8235293742282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.8235293742282"
+                    Point2="0,22.8235293742282"
+                    Point3="4,22.8235293742282" />
+                  <mssgle:LineSegment
+                    End="5.22857150611827,22.8235293742282" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.22857150611827,22.8235293742282"
+                    Point2="9.22857150611827,22.8235293742282"
+                    Point3="9.22857150611827,26.8235293742282" />
+                  <mssgle:LineSegment
+                    End="9.22857150611827,38.1470587484565" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\raw_data _to_ods.Paths[Data Conversion Output]"
+          TopLeft="406.900000707805,190.564705779128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.0235293058581"
+              Start="0,0"
+              End="0,40.5235293058581">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40.5235293058581" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\raw_data _to_ods\ods_table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
